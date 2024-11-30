@@ -14,9 +14,10 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	// console.log('Server Body:', document.body.className);
 	return (
 		<html lang="pt-BR">
-			<body className={type_second.variable + ' body'}>
+			<body className={type_second.variable}>
 				<div className="App">
 					<Header />
 					<main className="AppBody">{children}</main>
